@@ -44,7 +44,6 @@ const Home = () => {
           {DATA.map((currentValue, index) => {
             return (
             <Cardmine
-            id='card_home'
             key={index}
             title = {currentValue.title} 
             text= {currentValue.text}

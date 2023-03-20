@@ -8,7 +8,7 @@ const Cardmine = (props) => {
 
    return (
     <Card className='card_item' onClick = {() => {navigate(props.link)}}>
-      <Card.Img variant="top" src={props.img} height='50%'/>
+      <Card.Img variant="top" src={props.img} height='50%' alt ="NOT FOUND"/>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{props.subtitle}</Card.Subtitle>

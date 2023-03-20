@@ -5,9 +5,10 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <Row>
-          <Col className='text-center py-3'>Copyright &copy; CoopCardales</Col>
-        </Row>
+        <Col >
+          <Row className='py-3' style={{display: 'flex', justifyContent:'center'}}>Copyright &copy; CoopCardales</Row>
+          <Row className='py-3' style={{display: 'flex', justifyContent:'center'}}>Contactanos en: Info@CoopCardales.com.ar</Row>
+        </Col>
       </Container>
     </footer>
   )
