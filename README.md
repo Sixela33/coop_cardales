@@ -1,5 +1,3 @@
-Hice esta página web para presentar una Cooperativa de la cual soy miembro fundador, para hacerla utilicé react y Bootstrap.
-
 ## Comandos basicos:
 
 `npm start`
