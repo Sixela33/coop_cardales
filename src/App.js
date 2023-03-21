@@ -22,6 +22,8 @@ function App() {
               <Route path="/ftth" element={<FTTH />} />
               <Route path="/diagnosticosinteligentes" element={<RxDiagnostics />} />
               <Route path="/" element={<Home />} />
+              {/* When unknown route, go to home */}
+              <Route path="*" element={<Home />} />
               
 
             </Routes>
