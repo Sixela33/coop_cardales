@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../components/banner/Banner'
 import {Container} from 'react-bootstrap'
+import IMAGES from '../imgs/index'
 
 const EQUIPOS = [
   {
@@ -13,7 +14,7 @@ const EQUIPOS = [
     {cargo: "Síndico Suplente", nombre: "Jose Maria Vazquez", titulo: "Ing."},
   ]},
   {
-  nombre: "Nuestro Equipo de FTTH",
+  nombre: "División FTTH",
   integrantes: [
     {cargo: "Lider", nombre: "Jose Maria Vazquez", titulo: "Ing."}
   ]},
@@ -22,12 +23,17 @@ const EQUIPOS = [
   integrantes: [
     {cargo: "Lider", nombre: "Alexis Jankowski"}
   ]},
+  {
+  nombre: "División de Energia",
+  integrantes: [
+    {cargo: "Lider", nombre: "Jorge Carlos Jankowski", titulo: "Ing."}
+  ]}
 ]
 
 const Equipo = () => {
   return (
     <>
-      <Banner link={process.env.PUBLIC_URL + '/imagenes/meetingroom2.png'}>
+      <Banner link={ IMAGES.meetingRoom }>
           <h1>CONOCE A NUESTRO EQUPIO</h1>
           <p>Cooperativa de Servicios Públicos y Sociales LOS CARDALES LTD.</p>
       </Banner>
@@ -48,7 +54,6 @@ const Equipo = () => {
             </div>
 
           )
-          console.log(currentValue.nombre)
         })}
       </Container>
     </>

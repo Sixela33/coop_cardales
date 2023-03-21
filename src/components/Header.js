@@ -1,9 +1,11 @@
 import React from 'react'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 // import './estilos.css'
 
 const Header = () => {
+  const navigate = useNavigate()
+
 
   return (
     <header>
@@ -15,18 +17,20 @@ const Header = () => {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link><Link to='/' >Home</Link></Nav.Link>
-              <Nav.Link><Link to='/team' >El Equipo</Link></Nav.Link>
+              <Nav.Link onClick = {() => {navigate('/')}}>Home</Nav.Link>
+              <Nav.Link onClick = {() => {navigate("/team")}}>El Equipo</Nav.Link>
               
               <NavDropdown title="Nuestros Proyectos" id="basic-nav-dropdown">
                 {/* Quedó nesteado poruqe el link sigue funcionando, dependiendo de donde clickeen en el item se utiliza el respectivo redirect
-                (preferiria que usen siempre el link) */}
-                <NavDropdown.Item href = "/ftth"><Link to="/ftth">FTTH</Link></NavDropdown.Item>
-                <NavDropdown.Item href = "/transito"><Link to="/transito">Control de transito</Link></NavDropdown.Item>
-                <NavDropdown.Item href = "/diagnosticosinteligentes"><Link to="/diagnosticosinteligentes">Diagnosticos inteligentes</Link></NavDropdown.Item>
+                (preferiria que usen siempre el link) 
+                Dejo el link por el estilo, no tiene referencia
+                */}
+                <NavDropdown.Item onClick = {() => {navigate("/ftth")}}>FTTH</NavDropdown.Item>
+                <NavDropdown.Item onClick = {() => {navigate("/transito")}}>Control de transito</NavDropdown.Item>
+                <NavDropdown.Item onClick = {() => {navigate("/diagnosticosinteligentes")}}>Diagnosticos inteligentes</NavDropdown.Item>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item href = "/team"><Link to="/team">Nuestro Equipo</Link></NavDropdown.Item>
+                <NavDropdown.Item onClick = {() => {navigate("/team")}}>Nuestro Equipo</NavDropdown.Item>
 
               </NavDropdown>
             </Nav>

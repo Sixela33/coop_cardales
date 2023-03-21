@@ -1,11 +1,12 @@
 import React from 'react'
 import Banner from '../components/banner/Banner'
 import { Container, Image  } from 'react-bootstrap'
+import IMAGES from '../imgs/index'
 
 const FTTH = () => {
   return (
     <>
-      <Banner link={process.env.PUBLIC_URL + '/imagenes/Trabajador-Index.png'}>
+      <Banner link= {IMAGES.ftth.banner}>
         <h1>FTTH</h1>
         <p>Cooperativa de Servicios Públicos y Sociales LOS CARDALES LTD.</p>
       </Banner>
@@ -28,7 +29,7 @@ const FTTH = () => {
         <br/>
 
       <div className='image-container'>
-        <img  src = {process.env.PUBLIC_URL + '/imagenes/ftth/GPON.jpg'}/>
+        <img  src = { IMAGES.ftth.ftth}/>
       </div>
 
         <br/>

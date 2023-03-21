@@ -1,12 +1,14 @@
 import React from 'react'
 import Banner from '../components/banner/Banner'
 import { Container } from 'react-bootstrap'
+import IMAGES from '../imgs/index'
+
 
 const ControlTransito = () => {
   return (
     <>
     
-    <Banner link={process.env.PUBLIC_URL + '/imagenes/Auto-camaras-conductores.png'}>
+    <Banner link={ IMAGES.transito.banner}>
       <h1>Control de Transito</h1>
       <p>Cooperativa de Servicios Públicos y Sociales LOS CARDALES LTD.</p>
     </Banner>
@@ -32,7 +34,7 @@ const ControlTransito = () => {
         <br/>
 
       <div className='image-container'>
-        <img  src = {process.env.PUBLIC_URL + '/imagenes/transito/vision.jpg'}/>
+        <img  src = {IMAGES.transito.vision}/>
       </div>
 
     </Container>
