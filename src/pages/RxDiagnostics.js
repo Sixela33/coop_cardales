@@ -18,13 +18,10 @@ const RxDiagnostics = () => {
       <p>Nuestra meta actual es ampliar la cantidad de patologías que el sistema es capaz de diagnosticar.</p>
 
       <br/>
-    <div className='image-container' style={{display: 'flex', flexFlow: 'row wrap'}}>
-      <div style={{ margin: '10px'}}><img  src = {IMAGES.rx.ejemplo1}/></div>
-      <div style={{ margin: '10px'}}><img  src = {IMAGES.rx.ejemplo2}/></div>
-      {console.log(IMAGES)}
-    </div>
-
-    
+      <div className='image-container' style={{display: 'flex', flexFlow: 'row wrap'}}>
+        <div style={{ margin: '10px'}}><img  src = {IMAGES.rx.ejemplo1}/></div>
+        <div style={{ margin: '10px'}}><img  src = {IMAGES.rx.ejemplo2}/></div>
+      </div>
     </Container>
 
     </>
