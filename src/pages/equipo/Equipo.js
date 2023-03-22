@@ -14,7 +14,7 @@ const Equipo = () => {
       <Container id='equipos'>
         {EQUIPOS.map((currentValue, index) => {
           return(
-            <div key={index} style={{width: '50%'}}>
+            <div key={index} className="equipo">
               <h1 className = 'page_title'>{currentValue.nombre}</h1>
               {currentValue.integrantes.map((currentVal, index2)=> {
                 return (
