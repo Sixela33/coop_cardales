@@ -6,6 +6,7 @@ import Equipo from './pages/equipo/Equipo'
 import ControlTransito from './pages/ControlTransito';
 import FTTH from './pages/FTTH';
 import RxDiagnostics from './pages/RxDiagnostics';
+import Estatuto from './pages/Estatuto';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
               <Route path="/transito" element={<ControlTransito />} />
               <Route path="/ftth" element={<FTTH />} />
               <Route path="/diagnosticosinteligentes" element={<RxDiagnostics />} />
-              <Route path="/" element={<Home />} />
+              <Route path="/estatuto" element={<Estatuto />} />
               {/* When unknown route, go to home */}
               <Route path="*" element={<Home />} />
               

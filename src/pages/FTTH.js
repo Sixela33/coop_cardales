@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../components/banner/Banner'
-import { Container, Image  } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import IMAGES from '../imgs/index'
 
 const FTTH = () => {

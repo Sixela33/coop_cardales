@@ -30,7 +30,7 @@ const Header = () => {
                 <NavDropdown.Item onClick = {() => {navigate("/diagnosticosinteligentes")}}>Diagnosticos inteligentes</NavDropdown.Item>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item onClick = {() => {navigate("/team")}}>Nuestro Equipo</NavDropdown.Item>
+                <NavDropdown.Item onClick = {() => {navigate("/estatuto")}}>Nuestro Estatuto Constitutivo</NavDropdown.Item>
 
               </NavDropdown>
             </Nav>

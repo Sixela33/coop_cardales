@@ -1,5 +1,6 @@
 const IMAGES = {
     meetingRoom: require('./meetingroom2.png'),
+    estatuto: require('./estatuto.png'),
     transito: {
         banner: require('./Auto-camaras-conductores.png'),
         vision: require('./transito/vision.jpg')
