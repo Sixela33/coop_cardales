@@ -1,5 +1,6 @@
 {
   "name": "coop_cardales",
+  "homepage": "http://coopcardales.com.ar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
