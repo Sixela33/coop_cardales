@@ -14,14 +14,19 @@ const DATA = [
       img: IMAGES.home.autos,
       link: '/transito'
      },
-  
     {title: 'Ayudando a los médicos',
       subtitle:'Diagnóstico inteligente de radiografias',
       text: 'Nuestro equipo especializado en IA ha desarollado una red neuronal capaz de detectar patologías en las radiografías de tórax',
       img: 'https://www.msdmanuals.com/-/media/manual/home/images/5/2/3/523-dilated-cardiomyopathy-chest-x-ray-s116-springer-high_es.jpg?mw=350&amp;thn=0&amp;sc_lang=es',
       link: '/diagnosticosinteligentes'
-     
+    },
+    {title: 'Energía',
+      subtitle: 'Distribución electrica',
+      text: 'La energía es un bien muy necesario en la actualidad y se vende con precios elevados, por eso nuestro equipo de energía se propuso comercializarla a un costo accesible para nuestros clientes',
+      img: IMAGES.zeus,
+      link: '/energia'
     }
+
 ]
 
 export default DATA

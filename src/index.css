@@ -67,7 +67,7 @@ footer {
 }
 
 .card_item :hover{
-    background: rgb(40, 45, 51);
+    background-color: rgb(40, 45, 51);
     transition: 0.5s ease-in-out;
     cursor: pointer;
 }
@@ -98,6 +98,17 @@ header {
 #disclaimer {
     text-align: left;
 }
+.responsive {
+    width:1120px;
+    height:630px
+}
+
+@media only screen and (max-width: 1120px) {
+    .responsive {
+        width:560px;
+        height:315px
+    }
+}
 
 @media only screen and (max-width: 700px) {
     #banner {
@@ -116,6 +127,10 @@ header {
 }
 
 @media only screen and (max-width: 400px) {
+    .responsive {
+        width:280px;
+        height:158px
+    }
     #banner {
         padding: 50px;
     }

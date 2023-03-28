@@ -28,6 +28,7 @@ const Header = () => {
                 <NavDropdown.Item onClick = {() => {navigate("/ftth")}}>FTTH</NavDropdown.Item>
                 <NavDropdown.Item onClick = {() => {navigate("/transito")}}>Control de transito</NavDropdown.Item>
                 <NavDropdown.Item onClick = {() => {navigate("/diagnosticosinteligentes")}}>Diagnosticos inteligentes</NavDropdown.Item>
+                <NavDropdown.Item onClick = {() => {navigate("/Energia")}}>Distribucion electrica</NavDropdown.Item>
 
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick = {() => {navigate("/estatuto")}}>Nuestro Estatuto Constitutivo</NavDropdown.Item>
