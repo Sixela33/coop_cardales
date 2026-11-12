@@ -29,7 +29,7 @@ const FTTH = () => {
         <br/>
 
       <div className='image-container'>
-        <img  src = { IMAGES.ftth.ftth}/>
+        <img src={IMAGES.ftth.ftth} alt="Diagrama de una red GPON de fibra óptica al hogar" />
       </div>
 
         <br/>

@@ -19,8 +19,8 @@ const RxDiagnostics = () => {
 
         <br/>
         <div className='image-container' style={{display: 'flex', flexFlow: 'row wrap'}}>
-          <div style={{ margin: '10px'}}><img  src = {IMAGES.rx.ejemplo1}/></div>
-          <div style={{ margin: '10px'}}><img  src = {IMAGES.rx.ejemplo2}/></div>
+          <div style={{ margin: '10px'}}><img src={IMAGES.rx.ejemplo1} alt="Radiografía de tórax de ejemplo" /></div>
+          <div style={{ margin: '10px'}}><img src={IMAGES.rx.ejemplo2} alt="Radiografía de tórax con detección de neumonía" /></div>
         </div>
       </Container>
 

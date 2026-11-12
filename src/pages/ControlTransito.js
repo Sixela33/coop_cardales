@@ -34,7 +34,7 @@ const ControlTransito = () => {
         <br/>
 
       <div className='image-container'>
-        <img  src = {IMAGES.transito.vision}/>
+        <img src={IMAGES.transito.vision} alt="Detección de vehículos y personas en una ruta" />
       </div>
 
     </Container>
