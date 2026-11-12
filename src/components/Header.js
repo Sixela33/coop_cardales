@@ -1,37 +1,40 @@
 import React from 'react'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
-import { Link, useNavigate } from 'react-router-dom'
-// import './estilos.css'
+import { NavLink, useLocation } from 'react-router-dom'
+
+const PROJECT_PATHS = ['/ftth', '/transito', '/diagnosticosinteligentes', '/energia', '/estatuto']
 
 const Header = () => {
-  const navigate = useNavigate()
-
+  const { pathname } = useLocation()
+  const onProject = PROJECT_PATHS.includes(pathname)
 
   return (
     <header>
-      <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
+      <Navbar variant='dark' expand="lg" sticky="top" collapseOnSelect className="site-nav">
         <Container>
 
-          <Navbar.Brand onClick = {() => {navigate('/')}}>LCLTD</Navbar.Brand>
+          <Navbar.Brand as={NavLink} to="/">
+            <img className="brand-mark" src={`${process.env.PUBLIC_URL}/cardo-icon.png`} alt="" />
+            <span className="brand-text">
+              <span className="brand-name">Los Cardales</span>
+              <span className="brand-sub">Cooperativa</span>
+            </span>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link onClick = {() => {navigate('/')}}>Home</Nav.Link>
-              <Nav.Link onClick = {() => {navigate("/team")}}>El Equipo</Nav.Link>
-              
-              <NavDropdown title="Nuestros Proyectos" id="basic-nav-dropdown">
-                {/* Quedó nesteado poruqe el link sigue funcionando, dependiendo de donde clickeen en el item se utiliza el respectivo redirect
-                (preferiria que usen siempre el link) 
-                Dejo el link por el estilo, no tiene referencia
-                */}
-                <NavDropdown.Item onClick = {() => {navigate("/ftth")}}>FTTH</NavDropdown.Item>
-                <NavDropdown.Item onClick = {() => {navigate("/transito")}}>Control de transito</NavDropdown.Item>
-                <NavDropdown.Item onClick = {() => {navigate("/diagnosticosinteligentes")}}>Diagnosticos inteligentes</NavDropdown.Item>
-                <NavDropdown.Item onClick = {() => {navigate("/Energia")}}>Distribucion electrica</NavDropdown.Item>
+              <Nav.Link as={NavLink} to="/" end>Home</Nav.Link>
+              <Nav.Link as={NavLink} to="/team">El Equipo</Nav.Link>
+
+              <NavDropdown title="Nuestros Proyectos" id="basic-nav-dropdown" className={onProject ? 'active-section' : undefined}>
+                <NavDropdown.Item as={NavLink} to="/ftth">FTTH</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/transito">Control de transito</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/diagnosticosinteligentes">Diagnosticos inteligentes</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/energia">Distribucion electrica</NavDropdown.Item>
 
                 <NavDropdown.Divider />
-                <NavDropdown.Item onClick = {() => {navigate("/estatuto")}}>Nuestro Estatuto Constitutivo</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="/estatuto">Nuestro Estatuto Constitutivo</NavDropdown.Item>
 
               </NavDropdown>
             </Nav>
