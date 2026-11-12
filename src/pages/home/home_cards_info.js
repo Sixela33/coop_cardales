@@ -17,7 +17,7 @@ const DATA = [
     {title: 'Ayudando a los médicos',
       subtitle:'Diagnóstico inteligente de radiografias',
       text: 'Nuestro equipo especializado en IA ha desarollado una red neuronal capaz de detectar patologías en las radiografías de tórax',
-      img: 'https://www.msdmanuals.com/-/media/manual/home/images/5/2/3/523-dilated-cardiomyopathy-chest-x-ray-s116-springer-high_es.jpg?mw=350&amp;thn=0&amp;sc_lang=es',
+      img: IMAGES.home.pneumonia,
       link: '/diagnosticosinteligentes'
     },
     {title: 'Energía',

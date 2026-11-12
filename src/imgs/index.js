@@ -15,6 +15,7 @@ const IMAGES = {
         banner: require('./Programador.png'),
         autos: require('./home/autos.png'),
         fibra: require('./home/fibraoptica.png'),
+        pneumonia: require('./home/pneumonia.jpg'),
     },
     rx: {
         banner: require('./rx-digital.png'),
